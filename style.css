@@ -1,11 +1,17 @@
 .container {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    align-items: center;
 }
 .container2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    border: 2px black solid;
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
 }
 
 .show {
@@ -21,4 +27,6 @@
 .show2 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }

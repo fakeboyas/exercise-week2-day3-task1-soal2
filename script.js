@@ -19,20 +19,23 @@ addButton.addEventListener("click", function () {
         let addText = document.createElement("li");
         addText.appendChild(item);
         addText.classList.add("show2");
-
         let addButton1 = document.createElement("button");
         let textButton1 = document.createTextNode("Edit");
         let addButton2 = document.createElement("button");
         let textButton2 = document.createTextNode("Delete");
-        //merge button1
+
+        //  merge button1
         addButton1.appendChild(textButton1);
         //merger button2
         addButton2.appendChild(textButton2);
-
+        //add div untuk styling
+        let btnDiv = document.createElement("div");
+        btnDiv.appendChild(addButton1);
+        btnDiv.appendChild(addButton2);
+        btnDiv.classList.add("btn");
         //merge all
 
-        addText.appendChild(addButton1);
-        addText.appendChild(addButton2);
+        addText.appendChild(btnDiv);
         display1.appendChild(addText);
     });
 });
