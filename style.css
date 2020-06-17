@@ -1,9 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
 .container2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.show {
     display: flex;
     flex-direction: column;
 }
 
-.show {
+.show1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.show2 {
     display: flex;
     flex-direction: row;
 }
