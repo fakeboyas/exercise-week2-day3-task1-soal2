@@ -31,9 +31,11 @@ function clear() {
 function display(item, index) {
     let display1 = document.getElementById("display");
     let text = document.createTextNode(item);
-    let addText = document.createElement("li");
+    let addText = document.createElement("span");
+    let addLi = document.createElement("li");
     addText.appendChild(text);
-    addText.classList.add("show2");
+    addLi.appendChild(addText);
+    addLi.classList.add("show2");
     let addButton1 = document.createElement("button");
     let textButton1 = document.createTextNode("Edit");
     let addButton2 = document.createElement("button");
@@ -58,8 +60,8 @@ function display(item, index) {
     btnDiv.classList.add("btn");
     //merge all
 
-    addText.appendChild(btnDiv);
-    display1.appendChild(addText);
+    addLi.appendChild(btnDiv);
+    display1.appendChild(addLi);
 }
 
 //membuat fungsi menampilkan
